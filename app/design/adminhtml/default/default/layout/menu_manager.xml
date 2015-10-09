@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Menu_Manager
+ *
+ * @category Menu Manager
+ * @package Menu_Manager
+ * @author Alex<info@qdesignstudio.nl>
+ * @copyright Copyright (c) 2015 Qdesogn Studio Pvt. Ltd (http://www.qdesignstudio.nl)
+ * @license http://opensource.org/licenses/afl-3.0.php Academic Free License (AFL 3.0)
+ */
+-->
+<layout>
+    <menu_manager_admin_adminhtml_index_index>
+        <reference name="content">
+            <block type="menu_manager/adminhtml_menu" name="menumanager_menu_grid" />
+        </reference>
+    </menu_manager_admin_adminhtml_index_index>
+
+    <menu_manager_admin_adminhtml_index_edit>
+        <reference name="content">
+            <block type="menu_manager/adminhtml_menu_edit" name="menumanager_menu_edit" />
+        </reference>
+
+        <reference name="left">
+            <block type="menu_manager/adminhtml_menu_edit_tabs" name="menumanager_menu_edit_tabs">
+                <block type="menu_manager/adminhtml_menu_edit_tab_main" name="menumanager_menu_edit_tab_main" />
+                <action method="addTab"><name>main_section</name><block>menumanager_menu_edit_tab_main</block></action>
+            </block>
+        </reference>
+    </menu_manager_admin_adminhtml_index_edit>
+
+    <menu_manager_admin_adminhtml_index_edit_item>
+        <reference name="content">
+            <block type="menu_manager/adminhtml_menu_item_edit" name="menumanager_menu_item_edit" />
+        </reference>
+    </menu_manager_admin_adminhtml_index_edit_item>
+</layout>

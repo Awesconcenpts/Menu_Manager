@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Menu_Manager>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Cms />
+                <Mage_Adminhtml />
+            </depends>
+        </Menu_Manager>
+    </modules>
+</config>

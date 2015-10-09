@@ -1,0 +1,32 @@
+<?php
+ /**
+ * Menu_Manager
+ *
+ * @category Menu Manager
+ * @package Menu_Manager
+ * @author Alex<info@qdesignstudio.nl>
+ * @copyright Copyright (c) 2015 Qdesogn Studio Pvt. Ltd (http://www.qdesignstudio.nl)
+ * @license http://opensource.org/licenses/afl-3.0.php Academic Free License (AFL 3.0)
+ */
+
+
+/**
+* @var $this Menu_Manager_Block_Menu
+* $this->getMenu() to get menu model, data
+<default>
+<reference name="header">
+		<block type="menu_manager/menu" name="test_menu" menu_id="test-menu">
+				<action method="setData"><name>menu_id</name><value>test-menu</value></action>
+		</block>
+</reference>
+</default>
+*/
+
+
+?>
+<?php 
+
+if ($menu = $this->getMenuHtml()): ?>
+    <?php echo $menu; ?>
+<?php endif; ?>
+
